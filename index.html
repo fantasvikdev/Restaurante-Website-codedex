@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krusty Krab</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+
+<body>
+    <header>
+        <img id="header-img" src="./src/img/krustykrab.png" alt="Krusty Krab Logo">
+        <h1>The krusty krab!</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Order Now!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section id="menu">
+    <div class="board">
+            <h2>Menu</h2>
+            <hr style="height: 5px; background-color: black;" >
+            <article>
+                <img src= "src/img/krabbypatty.jpg" alt="Krabby Patty">
+                <h3>Krabby Patty</h3>
+                <p>The Krabby Patty is the Krusty Krabs signature and most popular burger! it can also be ordered with cheese.<i> $1.99</i></i></p>
+            </article>  
+    
+            <article>
+                <img src="src/img/coralbits.jpg" alt="Coral bits">
+                <h3>Coral bits</h3>
+            <p>Our famous side dish that consist of small bits of pale pink corals served in a red and yellow paper food tray! Neptunes favourite.<i> $1.50</i></p>
+            </article>
+    
+            <article>
+                <img src="src/img/kelpshake.png" alt="Kelp shake">
+                <h3>Kelp milkshake</h3>
+                <p>Comes in a wide of variety of flavors and is usually served in an ice cream sundae glass cup! Even Squidward orders it sometimes...<i> $1.00</i></p>
+            </article>
+        </section>
+    </div>
+
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label>Krabby patty: </label><input type="number" value="1" min="0" max="10" step="1" id="krabby-patty" name="krabby-patty">
+            <br><br>
+            <label>Coral bits: </label><input type="number" value="1" min="0" max="10" step="1" id="coral-bits" name="coral-bits">
+            <br><br>
+            <label>Kelp shake: </label><input type="number" value="1" min="0" max="10" step="1" id="kelp-shake" name="kelp-shake">
+            <br><br>
+            <label>Extra Cheese (+$0.70) </label> <input type="checkbox" name="option"> 
+            <label>Extra Ketchup (+$0.50) </label> <input type="checkbox" name="option"> 
+            <br>
+            <label>Extra Mustard (+$0.50) </label> <input type="checkbox" name="option"> 
+            <label>Extra Pickles (+$0.50) </label> <input type="checkbox" name="option"> 
+            <br><br>
+            <textarea id="comments" name="comments" placeholder="Enter any special requests here..."></textarea>
+            <br><br>
+            <input type="submit" value="Submit">Go to Checkout
+        </form>
+    </section>
+</main>
+    
+<footer>
+    <p>Made with love by @fantasv1k</p>
+</footer>  
+</body>
+</html>
